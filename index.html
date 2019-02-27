@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <title></title>
+</head>
+
+<body>
+  <div class="wrapper col-12">
+    <h3 class="text-center pt-2 text-primary display-4">Calculator</h3>
+    <div class="result__field text-right">
+      <div class="total">0</div>
+      <div class="calc">0</div>
+    </div>
+    <div class="button__container p-2">
+      
+      <div class="row">
+        <div class="col-6"><button id="btn" class="btn my-2  w-100 btn-danger f-20" onclick="clearAll()">C</button></div>
+        <div class="col-3"><button id="btn" class="btn my-2  w-100 btn-warning f-20" onclick="del()">del</button></div>
+        <div class="col-3 "><button id="btn" class="btn my-2 w-100 btn-success f-20" onclick="result()">=</button></div>
+      </div>
+      
+      <div class="row">
+        <div class="col-3"><button id="btn" class="btn border border-rounded  w-100 my-2 btn-light f-20" onclick="getValue('7')">7</button></div>
+        <div class="col-3"><button id="btn" class="btn border border-rounded  w-100 my-2 btn-light f-20" onclick="getValue('8')">8</button></div>
+        <div class="col-3"><button id="btn" class="btn border border-rounded  w-100 my-2 btn-light f-20" onclick="getValue('9')">9</button></div>
+        <div class="col-3"><button id="btn" class="btn w-100 my-2 btn-primary f-20" onclick="getValue('*')">*</button></div>
+      </div>
+
+      <div class="row">
+        <div class="col-3"><button id="btn" class="btn border border-rounded  w-100 my-2 btn-light f-20" onclick="getValue('4')">4</button></div>
+        <div class="col-3"><button id="btn" class="btn border border-rounded  w-100 my-2 btn-light f-20" onclick="getValue(this.value)" value=5>5</button></div>
+        <div class="col-3"><button id="btn" class="btn border border-rounded  w-100 my-2 btn-light f-20" onclick="getValue('6')">6</button></div>
+        <div class="col-3"><button id="btn" class="btn w-100 my-2 btn-primary f-20" onclick="getValue('+')">+</button></div>
+      </div>
+      
+      <div class="row">
+        <div class="col-3"><button id="btn" class="btn border border-rounded  w-100 my-2 btn-light f-20" onclick="getValue('1')">1</button></div>
+        <div class="col-3"><button id="btn" class="btn border border-rounded  w-100 my-2 btn-light f-20" onclick="getValue('2')">2</button></div>
+        <div class="col-3"><button id="btn" class="btn border border-rounded  w-100 my-2 btn-light f-20" onclick="getValue('3')">3</button></div>
+        <div class="col-3"><button id="btn" class="btn w-100 my-2 btn-primary f-20" onclick="getValue('-')">-</button></div>
+      </div>
+      
+      <div class="row">
+        <div class="col-3"><button id="btn" class="btn border border-rounded  w-100 my-2 btn-light f-20" onclick="point()">.</button></div>
+        <div class="col-3"><button id="btn" class="btn border border-rounded  w-100 my-2 btn-light f-20" onclick="getValue('0')">0</button></div>
+        <div class="col-3"><button id="btn" class="btn border border-rounded  w-100 my-2 btn-light f-20" onclick="getValue('%')">%</button></div>
+        <div class="col-3"><button id="btn" class="btn w-100 my-2 btn-primary f-20" onclick="getValue('/')">/</button></div>
+      </div>
+    
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
